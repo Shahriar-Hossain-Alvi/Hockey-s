@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -22,6 +22,7 @@
                     colors: {
                         'hockey-secondary': '#131318',
                         'hockey-primary': '#FF4240',
+                        'hockey-third': '#424247',
                     }
                 }
             }
@@ -35,7 +36,6 @@
     </style>
     <title>Hockey's</title>
 </head>
-    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
     <!-- <i class="fa-solid fa-star"></i> -->
     <!-- <i class="fa-regular fa-eye"></i> -->
     <!-- <i class="fa-regular fa-heart"></i> -->
@@ -46,9 +46,71 @@
     <!-- <i class="fa-brands fa-github"></i> -->
     <!-- <i class="fa-regular fa-envelope"></i> -->
     <!-- <i class="fa-solid fa-phone"></i> -->
-<body>
-    <header>
-        
+<body class="font-manrope">
+    <!-- ============================header section============================= -->
+    <header class="container mx-auto">
+        <!-- nav start -->
+        <div class="navbar mb-14 lg:pt-14">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <!-- for mobile button -->
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-normal text-base text-hockey-third">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-extrabold text-hockey-secondary">
+                    Hockey<span class="text-hockey-primary">’</span>s
+                </a>
+            </div>
+            <!-- for other devices -->
+            <div class="navbar-center hidden lg:flex text-sm">
+                <ul class="px-1 font-normal text-base  flex items-center justify-between gap-11 text-hockey-third">
+                    <li class="hover:text-hockey-primary"><a href="">Home</a></li>
+                    <li class="hover:text-hockey-primary"><a href="">Services</a></li>
+                    <li class="hover:text-hockey-primary"><a href="">Cases</a></li>
+                    <li class="hover:text-hockey-primary"><a href="">Blog</a></li>
+                    <li class="hover:text-hockey-primary"><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end flex gap-4">
+                <a class="text-[#89898B] text-3xl hover:text-hockey-primary" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a
+                    class="btn bg-hockey-primary text-white text-xl font-bold hover:bg-white hover:border-hockey-primary hover:text-hockey-primary">Get Ticket
+                </a>
+            </div>
+        </div>
+        <!-- nav end -->
+
+        <!-- banner part start -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="flex justify-end items-end py-24 bg-cover"
+                    style="background-image: url(images/1.png);">
+                    <div class="w-[50%] p-8 bg-hockey-secondary">
+                        <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                        <p class=" text-base font-normal text-white opacity-60 px-11">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. .</p>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            
+        </div>
+        <!-- banner part end -->
     </header>
 
     <main></main>
